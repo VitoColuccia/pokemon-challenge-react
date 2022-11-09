@@ -13,5 +13,4 @@ E' possibile aggiungere dei pokemon al proprio pokedex, per un massimo di 10 pok
 La web app va sviluppata in plain JS o React. Per lo stile della web app va utilizzata la libreria Milligram CSS (https://milligram.io/#getting-started)
 
 ### Deployment
-
-[https://vitocoluccia-pokemon-challenge-react.netlify.app/](https://vitocoluccia-pokemon-challenge-react.netlify.app/)
+[Pokemon challenge - Netlify](https://vitocoluccia-pokemon-challenge-react.netlify.app/)
