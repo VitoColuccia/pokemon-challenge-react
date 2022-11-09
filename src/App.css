@@ -12,6 +12,10 @@
     flex-wrap:wrap;
 }
 
+.flex-align-center{
+    align-content: center;
+}
+
 .row .column.column-15 {
     flex: 0 0 15%;
     max-width: 15%;

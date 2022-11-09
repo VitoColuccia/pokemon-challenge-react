@@ -14,7 +14,7 @@ class Pokedex extends React.Component {
       return (
         <div>
           <h2>Il tuo Pokedex</h2>
-          <div className='row flex-wrap'>
+          <div className='row flex-wrap flex-align-center'>
             {this.props.pokedex.map(e => 
                 <div key={e.name} className="column column-15 flex-column">
                   <h3>{e.name}</h3>
