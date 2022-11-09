@@ -20,3 +20,8 @@
     flex: 0 0 15%;
     max-width: 15%;
   }
+
+@media (max-width: 500px) {
+    .column-50, .column-25, .column-15{max-width: 100% !important;}
+    .column-offset-25 {margin-left: 0 !important;}
+}
