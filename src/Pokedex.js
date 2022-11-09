@@ -13,8 +13,16 @@ class Pokedex extends React.Component {
     render() {
       return (
         <div>
-          <h1>Pokedex</h1>
-          
+          <h2>Il tuo Pokedex</h2>
+          <div className='row flex-wrap'>
+            {this.props.pokedex.map(e => 
+                <div key={e.name} className="column column-15 flex-column">
+                  <h3>{e.name}</h3>
+                  <img src={e.sprites.front_default} alt={e.name}/>
+                  <input type="button" className='button' value="MOSTRA" onClick={() => this.props.handleSearch(e)}/>
+                  <input type="button" className='button button-outline' value="ELIMINA" onClick={() => this.props.handleDeletePokedex(e)} />
+                </div>)}
+          </div>
         </div>
       );
     }

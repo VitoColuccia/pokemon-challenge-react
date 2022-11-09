@@ -29,7 +29,7 @@ class Profile extends React.Component {
     }
   
     render() {
-        const stats = this.props.pokemon.stats?.map(e => <div><label for={e.stat.name}>{e.stat.name}</label><progress max="100" value={e.base_stat} id={e.stat.name}/></div> )
+        const stats = this.props.pokemon.stats?.map(e => <div key={e.stat.name}><label htmlFor={e.stat.name}>{e.stat.name}</label><progress max="100" value={e.base_stat} id={e.stat.name}/></div> )
       return (
         <div>
           <h2>Ecco i tuoi risultati per [{this.props.pokemon.name}]</h2>
@@ -54,7 +54,9 @@ class Profile extends React.Component {
                 {stats}
             </div>
           </div>
-          {this.props.pokemon.name && (<button className='button'>AGGIUNGILO AL POKEDEX</button>)}
+          {//this.props.pokemon.name && (<input type="button" className='button' value="AGGIUNGILO AL POKEDEX" onClick={this.props.handleAddPokedex}/>)
+          }
+          <input type="button" className='button' value="AGGIUNGILO AL POKEDEX" onClick={this.props.handleAddPokedex} disabled={this.props.isPreferite}/>
         </div>
       );
     }
